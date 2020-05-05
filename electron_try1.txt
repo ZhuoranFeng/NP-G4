@@ -1,0 +1,48 @@
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0        30        0        0         0      Sphere initStep
+1     1.61  -0.0624   0.0359      29.4    0.554     1.62      1.62      Sphere eBrem
+2      2.5  -0.0865   0.0452      29.1    0.289    0.887       2.5      Target Transportation
+3        5   -0.175     0.15      28.3    0.864     2.51      5.02       World Transportation
+4      5.5   -0.227    0.134      28.3 1.68e-26    0.503      5.52  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     1.61  -0.0624   0.0359    0.0406        0        0         0      Sphere initStep
+1      2.5  -0.0859   0.0355    0.0406        0    0.886     0.886      Target Transportation
+2     4.75   -0.146   0.0344         0 0.000152     2.25      3.14      Target phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 3,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     4.75   -0.146   0.0344    0.0404        0        0         0      Target initStep
+1     4.76   -0.146   0.0362         0   0.0404   0.0167    0.0167      Target eIoni
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Change the up vector or "/vis/viewer/set/rotationStyle freeRotation".

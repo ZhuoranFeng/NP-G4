@@ -1,0 +1,40 @@
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0        30        0        0         0      Sphere initStep
+1     1.04        0        0      26.1     3.94     1.04      1.04      Sphere hIoni
+2     1.88  -0.0294 -0.00708        22     4.01    0.843      1.88      Sphere hIoni
+3      2.5  -0.0424  -0.0199      18.7     3.35    0.619       2.5      Target Transportation
+4     3.09  -0.0526  -0.0163      15.6     3.11    0.587      3.09      Target hIoni
+5     3.55   -0.066  -0.0112      12.6     2.94    0.466      3.55      Target hIoni
+6     3.92  -0.0895 -0.00488        10     2.63    0.368      3.92      Target hIoni
+7     4.21    -0.11  0.00893      7.41     2.61    0.292      4.21      Target hIoni
+8     4.44   -0.117   0.0193      4.83     2.58    0.226      4.44      Target hIoni
+9      4.6   -0.123   0.0245      1.93      2.9    0.162       4.6      Target hIoni
+10     4.64   -0.127   0.0325     0.136     1.79   0.0454      4.65      Target hIoni
+11     4.64   -0.127   0.0326         0    0.136  0.00135      4.65      Target hIoni
