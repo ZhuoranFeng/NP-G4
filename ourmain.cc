@@ -17,12 +17,16 @@
 #include "YourPrimaryGeneratorAction.hh"
 #include "YourActionInitialization.hh"
 
+//add scoring
+#include "G4ScoringManager.hh"
+
 
 
 int main(int argc, char** argv) {
   
   //1. create the RunManager object 
   G4RunManager* runManager = new G4RunManager();
+  G4ScoringManager* scoringManager = G4ScoringManager::GetScoringManager();
  
   //2. Create an object from YourDetectorConstruction and register in the Run-Manager
   YourDetectorConstruction* detector = new YourDetectorConstruction();
