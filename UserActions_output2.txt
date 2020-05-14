@@ -1,0 +1,254 @@
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+WARNING: Trajectory storing has been requested.  This action may be
+  reversed with "/tracking/storeTrajectory 0".
+WARNING: The vis manager will keep up to 100 events.
+  This may use a lot of memory.
+  It may be changed with, e.g., "/vis/scene/endOfEventAction accumulate 10".
+G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
+See commands in /vis/modeling/trajectories/ for other options.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0       100        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1      2.5        0        0      99.2    0.845      2.5       2.5      Target CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.8445588764663587 MeV
+2        5   0.0264   0.0121      98.4     0.75      2.5         5       World CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.7497690783769247 MeV
+3      5.5   0.0286   0.0066      98.4 1.86e-26      0.5       5.5  OutOfWorld CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 1.855282340218391e-26 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+WARNING: Viewpoint direction is very close to the up vector direction.
+  Change the up vector or "/vis/viewer/set/rotationStyle freeRotation".
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0     0.001        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1 3.38e-06 -5.11e-07 1.39e-06         0    0.001 3.94e-06  3.94e-06      Sphere msc
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.001 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0       0.1        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1  0.00268 -0.000129  0.00054    0.0973   0.0027  0.00279   0.00279      Sphere msc
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.002703122363164112 MeV
+2   0.0249 -0.00102  0.00402         0   0.0973   0.0664    0.0692      Sphere eIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.09729687763683589 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0         1        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1   0.0941   0.0178  0.00371     0.965    0.035   0.0973    0.0973      Sphere msc
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.03496738392288992 MeV
+2    0.694    0.201   0.0527     0.636    0.329    0.929      1.03      Sphere eIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.3293199322587492 MeV
+3    0.832    0.215    0.474   0.00992    0.626     1.15      2.17      Sphere eIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.6257882458792333 MeV
+4    0.832    0.215    0.474         0  0.00992  0.00131      2.17      Sphere eIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.009924437939127562 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0        10        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1      2.5        0        0      9.04    0.959     2.55      2.55      Target CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.9594390699365971 MeV
+2        5   -0.176   -0.503      8.25    0.787     2.62      5.18       World CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.7873147334155041 MeV
+3      5.5   -0.123   -0.582      8.25 1.52e-26    0.509      5.68  OutOfWorld CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 1.517568127690486e-26 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0       100        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: e-
+1      2.5        0        0      99.1    0.863      2.5       2.5      Target CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.8628000987796455 MeV
+2        5   0.0364   0.0077      98.3    0.846      2.5         5       World CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.8459042021951805 MeV
+3      5.5   0.0438  0.00835      98.3 1.86e-26      0.5       5.5  OutOfWorld CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 1.855180058535595e-26 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0     0.001        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: proton
+1 2.32e-06 6.48e-08 -1.25e-06         0    0.001  1.6e-05   1.6e-05      Sphere msc
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.001 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0       0.1        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: proton
+1 0.000993        0        0     0.021    0.079  0.00101   0.00101      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.07902676122205042 MeV
+2  0.00118 -2.64e-05 4.44e-05     0.018  0.00294 0.000359   0.00137      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.002939808110059788 MeV
+3  0.00131 -8.52e-05 0.000174    0.0147  0.00337 0.000335    0.0017      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.003368951953019732 MeV
+4  0.00134 -8.01e-06 0.000298         0   0.0147 0.000308   0.00201      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.01466447871487006 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0         1        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: proton
+1   0.0126 -2.54e-05  0.00275    0.0282    0.972   0.0147    0.0147      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.9718261524881846 MeV
+2   0.0127 2.08e-05  0.00303         0   0.0282 0.000421    0.0151      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.0281738475118154 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0        10        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: proton
+1    0.274        0        0      7.08     2.92    0.274     0.274      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 2.92441613808017 MeV
+2     0.48  0.00563 -0.000181      4.14     2.94    0.206      0.48      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 2.936270878793319 MeV
+3    0.611  0.00884  0.00241     0.764     3.38    0.131     0.611      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 3.375292828288437 MeV
+4    0.621  0.00958  0.00298         0    0.764  0.00994     0.621      Sphere hIoni
+......YourSteppingAction::UserSteppingAction() called:  dE= 0.764020154838073 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
+YourRunAction::GenerateRun() called
+YourRunAction::BeginOfRunAction() called
+..YourEventAction::BeginOfEventAction() called
+*********************************************************************************************************
+* G4Track Information:   Particle = proton,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0        0        0       100        0        0         0      Sphere initStep
+....YourTrackingAction::PreUserTrackingAction() called: particle type: proton
+1      2.5        0        0      96.3     3.71      2.5       2.5      Target CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 3.705495834945624 MeV
+2        5 -0.00906  -0.0168      92.7      3.6      2.5         5       World CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 3.602060292268046 MeV
+3      5.5  0.00592  -0.0267      92.7 5.81e-26      0.5       5.5  OutOfWorld CoupledTransportation
+......YourSteppingAction::UserSteppingAction() called:  dE= 5.808043297486454e-26 MeV
+....YourTrackingAction::PostUserTrackingAction() called
+..YourEventAction::EndOfEventAction() called
+YourRunAction::EndOfRunAction() called
+1 event has been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.
